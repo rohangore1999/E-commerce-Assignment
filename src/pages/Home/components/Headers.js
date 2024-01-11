@@ -6,7 +6,7 @@ import {
 } from "@heroicons/react/outline";
 
 const Headers = () => (
-  <div className="flex items-center mx-10 py-1 justify-between">
+  <div className="flex items-center mx-10 pt-1 justify-between">
     {/* left container */}
     <div className="flex space-x-10">
       <img
@@ -15,9 +15,9 @@ const Headers = () => (
         src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo.svg"
       />
 
-      <div>Men</div>
-      <div>Women</div>
-      <div>Accessories</div>
+      <div className="link">Men</div>
+      <div className="link">Women</div>
+      <div className="link">Accessories</div>
     </div>
 
     {/* right container */}
@@ -36,17 +36,17 @@ const Headers = () => (
 
       <div className="with-icons">
         <UserIcon className="h-5 w-5" />
-        <p>Account</p>
+        <p className="link">Account</p>
       </div>
 
       <div className="with-icons">
         <HeartIcon className="h-5 w-5" />
-        <p>Wishlist</p>
+        <p className="link">Wishlist</p>
       </div>
 
       <div className="with-icons">
         <ShoppingBagIcon className="h-5 w-5" />
-        <p>Cart</p>
+        <p className="link">Cart</p>
       </div>
     </div>
   </div>
