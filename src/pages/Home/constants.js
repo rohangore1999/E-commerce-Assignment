@@ -1,3 +1,8 @@
+// Images
+import banner1 from "../../images/banner/banner1.jpg";
+import banner2 from "../../images/banner/banner2.jpg";
+import banner3 from "../../images/banner/banner3.jpg";
+
 export const MENU_CONFIG = [
   {
     img: "https://images.pexels.com/photos/789555/pexels-photo-789555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -42,5 +47,43 @@ export const MENU_CONFIG = [
   {
     img: "https://images.pexels.com/photos/5693889/pexels-photo-5693889.jpeg?auto=compress&cs=tinysrgb&w=600",
     text: "Teens",
+  },
+];
+
+export const BANNER_CONFIG = [
+  { img: banner1, caption: "Caption" },
+  { img: banner2, caption: "Caption" },
+  { img: banner3, caption: "Caption" },
+];
+
+export const FEATURE_BRAND_CONFIG = [
+  {
+    title: "New Arrival",
+    img: "https://images.pexels.com/photos/52518/jeans-pants-blue-shop-52518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+
+  {
+    title: "Best Sellers",
+    img: "https://images.pexels.com/photos/19583674/pexels-photo-19583674/free-photo-of-a-jacket-on-a-mannequin.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+
+  {
+    title: "Official Collaboration",
+    img: "https://images.pexels.com/photos/2112651/pexels-photo-2112651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+
+  {
+    title: "Vote for Design",
+    img: "https://images.pexels.com/photos/4004173/pexels-photo-4004173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+
+  {
+    title: "Last Size Left",
+    img: "https://images.pexels.com/photos/2002717/pexels-photo-2002717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+
+  {
+    title: "Plus Size",
+    img: "https://images.pexels.com/photos/4066288/pexels-photo-4066288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];
