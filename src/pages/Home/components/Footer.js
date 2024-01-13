@@ -166,7 +166,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <Divider className="border-gray-600 my-10" />
+        <Divider className="border-gray-600 my-14" />
 
         <div className="flex justify-between">
           <div className="space-y-5">

@@ -52,8 +52,8 @@ export const MENU_CONFIG = [
 
 export const BANNER_CONFIG = [
   { img: banner1, caption: "Caption" },
-  { img: banner2, caption: "Caption" },
-  { img: banner3, caption: "Caption" },
+  { img: banner1, caption: "Caption" },
+  { img: banner1, caption: "Caption" },
 ];
 
 export const FEATURE_BRAND_CONFIG = [
