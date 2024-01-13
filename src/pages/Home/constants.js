@@ -90,38 +90,98 @@ export const FEATURE_BRAND_CONFIG = [
 
 export const GRID_CARD_CONFIG = [
   {
+    id: 1001,
     img: "https://images.pexels.com/photos/794062/pexels-photo-794062.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     caption: "Color Splash",
     row: 2,
+    col: 1,
   },
 
   {
+    id: 2001,
     img: "https://images.pexels.com/photos/1456737/pexels-photo-1456737.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     caption: "Color Splash",
     row: 1,
+    col: 1,
   },
 
   {
+    id: 3001,
     img: "https://images.pexels.com/photos/6764007/pexels-photo-6764007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     caption: "Color Splash",
     row: 2,
+    col: 1,
   },
 
   {
+    id: 4001,
     img: "https://images.pexels.com/photos/7327268/pexels-photo-7327268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     caption: "Color Splash",
     row: 2,
+    col: 1,
   },
 
   {
-    img: "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    caption: "Color Splash",
-    row: 2,
-  },
-
-  {
+    id: 5001,
     img: "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     caption: "Color Splash",
     row: 1,
+    col: 1,
+  },
+
+  {
+    id: 6001,
+    img: "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    caption: "Color Splash",
+    row: 1,
+    col: 1,
+  },
+];
+
+export const BANNER_TOO_HOT_TO_MISS_1 =
+  "https://images.pexels.com/photos/4904563/pexels-photo-4904563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+
+export const BANNER_TOO_HOT_TO_MISS_2 =
+  "https://images.pexels.com/photos/19759653/pexels-photo-19759653/free-photo-of-elegant-indian-bride-sitting-on-a-bed-in-traditional-wedding-clothing.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+
+export const CATEGORIES_TO_BAGS = [
+  {
+    title: "New Arrival",
+    img: "https://images.pexels.com/photos/52518/jeans-pants-blue-shop-52518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+
+  {
+    title: "Best Sellers",
+    img: "https://images.pexels.com/photos/19583674/pexels-photo-19583674/free-photo-of-a-jacket-on-a-mannequin.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+
+  {
+    title: "Official Collaboration",
+    img: "https://images.pexels.com/photos/2112651/pexels-photo-2112651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+
+  {
+    title: "Vote for Design",
+    img: "https://images.pexels.com/photos/4004173/pexels-photo-4004173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+
+  {
+    title: "Last Size Left",
+    img: "https://images.pexels.com/photos/2002717/pexels-photo-2002717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+
+  {
+    title: "Plus Size",
+    img: "https://images.pexels.com/photos/4066288/pexels-photo-4066288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+
+  {
+    title: "Last Size Left",
+    img: "https://images.pexels.com/photos/2002717/pexels-photo-2002717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+
+  {
+    title: "Plus Size",
+    img: "https://images.pexels.com/photos/4066288/pexels-photo-4066288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];

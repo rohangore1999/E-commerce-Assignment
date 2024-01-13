@@ -1,15 +1,20 @@
 import React from "react";
 
-const Cards = ({ img, title }) => {
+const Cards = ({ img, title, background, hover }) => {
   return (
-    <div className="cursor-pointer hover:scale-105 transform transition duration-300 ease-out bg-[#e5fffe] p-3 rounded-3xl">
+    <div
+      className={`basis-1/5 flex flex-col items-center  ${
+        hover &&
+        "hover:scale-105 transform transition duration-300 ease-out cursor-pointer"
+      } ${background && `bg-[#e5fffe]`} p-3 rounded-3xl`}
+    >
       <div className="relative h-50 w-60">
         <img
           alt=""
           className="rounded-xl"
           src={img}
           layout="fill"
-          objectFit="contain"
+          objectfit="contain"
           width={500}
         />
       </div>

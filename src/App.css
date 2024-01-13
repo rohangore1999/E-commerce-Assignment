@@ -10,6 +10,10 @@
   .link {
     @apply cursor-pointer;
   }
+
+  .section-container {
+    @apply flex flex-col justify-center pt-20 space-y-10;
+  }
 }
 
 @layer utilities {

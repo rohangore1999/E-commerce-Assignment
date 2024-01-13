@@ -22,8 +22,8 @@ const HeroBanner = () => {
         interval={5000}
         className="w-[90%]"
       >
-        {BANNER_CONFIG.map((banner) => (
-          <Banner img={banner.img} caption={banner.caption} />
+        {BANNER_CONFIG.map((banner, bannerIdx) => (
+          <Banner key={bannerIdx} img={banner.img} caption={banner.caption} />
         ))}
       </Carousel>
     </section>
