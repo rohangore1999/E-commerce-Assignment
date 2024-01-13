@@ -6,7 +6,7 @@ const MenuCards = ({ img, caption }) => {
       <img alt="menu-icons" src={img} className="rounded-lg w-80" />
 
       <div className="flex justify-center mt-2">
-        <p className="text-xs font-semibold">{caption}</p>
+        <p className="text-sm font-semibold">{caption}</p>
       </div>
     </div>
   );
