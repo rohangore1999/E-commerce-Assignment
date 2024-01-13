@@ -1,7 +1,5 @@
-import React from "react";
-
-const Divider = ({ className }) => (
-  <div className={`border-b-2 my-2 ${className}`} />
+const Divider = ({ styles }) => (
+  <div className={`border-b-2 my-2 ${styles}`} />
 );
 
 export default Divider;
