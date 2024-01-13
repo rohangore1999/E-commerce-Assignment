@@ -87,3 +87,41 @@ export const FEATURE_BRAND_CONFIG = [
     img: "https://images.pexels.com/photos/4066288/pexels-photo-4066288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];
+
+export const GRID_CARD_CONFIG = [
+  {
+    img: "https://images.pexels.com/photos/794062/pexels-photo-794062.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    caption: "Color Splash",
+    row: 2,
+  },
+
+  {
+    img: "https://images.pexels.com/photos/1456737/pexels-photo-1456737.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    caption: "Color Splash",
+    row: 1,
+  },
+
+  {
+    img: "https://images.pexels.com/photos/6764007/pexels-photo-6764007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    caption: "Color Splash",
+    row: 2,
+  },
+
+  {
+    img: "https://images.pexels.com/photos/7327268/pexels-photo-7327268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    caption: "Color Splash",
+    row: 2,
+  },
+
+  {
+    img: "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    caption: "Color Splash",
+    row: 2,
+  },
+
+  {
+    img: "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    caption: "Color Splash",
+    row: 1,
+  },
+];
