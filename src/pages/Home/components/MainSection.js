@@ -1,10 +1,7 @@
 // Constants
 import {
-  MENU_CONFIG,
-  FEATURE_BRAND_CONFIG,
   BANNER_TOO_HOT_TO_MISS_1,
   BANNER_TOO_HOT_TO_MISS_2,
-  CATEGORIES_TO_BAGS,
 } from "../constants";
 
 // Images
@@ -17,6 +14,13 @@ import Cards from "./Cards";
 import Banner from "./Banner";
 import GridCards from "./GridCards";
 import SectionTitle from "../../../components/SectionTitle";
+
+// Configs
+import {
+  CATEGORIES_TO_BAGS_CONFIG,
+  FEATURE_BRAND_CONFIG,
+  MENU_CONFIG,
+} from "../../../configs";
 
 const MainSection = () => {
   return (
@@ -76,7 +80,7 @@ const MainSection = () => {
         <SectionTitle title="Categories to bag" />
 
         <div className="flex justify-center flex-wrap -ml-3">
-          {CATEGORIES_TO_BAGS.map((feature, id) => (
+          {CATEGORIES_TO_BAGS_CONFIG.map((feature, id) => (
             <Cards key={id} img={feature.img} title={feature.title} />
           ))}
         </div>

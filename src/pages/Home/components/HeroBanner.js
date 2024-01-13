@@ -4,8 +4,8 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-// Constants
-import { BANNER_CONFIG } from "../constants";
+// Configs
+import { BANNER_CONFIG } from "../../../configs";
 
 // Components
 import Banner from "./Banner";

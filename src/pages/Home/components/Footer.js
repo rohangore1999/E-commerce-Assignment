@@ -1,9 +1,4 @@
-import {
-  SearchIcon,
-  ShoppingBagIcon,
-  CashIcon,
-  TruckIcon,
-} from "@heroicons/react/outline";
+import { CashIcon, TruckIcon } from "@heroicons/react/outline";
 
 // Components
 import Divider from "../../../components/Divider";
@@ -166,7 +161,8 @@ export const Footer = () => {
           </div>
         </div>
 
-        <Divider styles="border-gray-600 my-10" />
+        {/* <Divider styles="border-gray-600 my-10" /> */}
+        <div className="border-b-2 border-gray-600 my-10" />
 
         <div className="flex justify-between">
           <div className="space-y-5">
