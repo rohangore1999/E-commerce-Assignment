@@ -61,6 +61,7 @@ const MainSection = () => {
         <GridCards />
       </div>
 
+      {/* Too Hot Section */}
       <>
         <SectionTitle title="Too hot to be missed" />
 
@@ -70,10 +71,11 @@ const MainSection = () => {
         </div>
       </>
 
+      {/* Categories to Bag */}
       <>
         <SectionTitle title="Categories to bag" />
 
-        <div className="flex justify-center flex-wrap space-x-3 p-3 -ml-3">
+        <div className="flex justify-center flex-wrap -ml-3">
           {CATEGORIES_TO_BAGS.map((feature, id) => (
             <Cards key={id} img={feature.img} title={feature.title} />
           ))}
