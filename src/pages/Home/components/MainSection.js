@@ -69,7 +69,7 @@ const MainSection = () => {
         <GridCards />
       </div>
 
-      {/* Too Hot Section */}
+      {/* Too Hot to Section */}
       <>
         <SectionTitle title="Too hot to be missed" />
 
