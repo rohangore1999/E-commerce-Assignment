@@ -161,10 +161,9 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* <Divider styles="border-gray-600 my-10" /> */}
-        <div className="border-b-2 border-gray-600 my-10" />
+        <Divider className="border-b-2 border-gray-600 my-10" />
 
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-wrap">
           <div className="space-y-5">
             <img
               alt="company_logo"
@@ -199,29 +198,35 @@ export const Footer = () => {
                 100% Secure Payment
               </p>
 
-              <span className="flex space-x-5 bg-white p-2">
+              <span className="space-x-5 bg-white p-2 hidden lg:flex">
                 <img
+                  alt="footer-img"
                   width={50}
                   src="https://cdna.iconscout.com/img/visa.4759160.svg"
                 />
 
                 <img
+                  alt="footer-img"
                   width={50}
                   src="https://cdna.iconscout.com/img/upi.6114ac6.svg"
                 />
                 <img
+                  alt="footer-img"
                   width={50}
                   src="https://cdna.iconscout.com/img/razorpay.6e46f6f.svg"
                 />
                 <img
+                  alt="footer-img"
                   width={50}
                   src="https://cdna.iconscout.com/img/apple-pay.253013b.svg"
                 />
                 <img
+                  alt="footer-img"
                   width={50}
                   src="https://cdna.iconscout.com/img/google-pay.50c14aa.svg"
                 />
                 <img
+                  alt="footer-img"
                   width={50}
                   src="https://cdna.iconscout.com/img/paypal-logo.17b6873.svg"
                 />

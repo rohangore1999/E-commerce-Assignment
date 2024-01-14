@@ -3,7 +3,7 @@ import React from "react";
 const Cards = ({ img, title, background, hover }) => {
   return (
     <div
-      className={`basis-1/5 flex flex-col items-center  ${
+      className={`basis-1/5 flex flex-col items-center ${
         hover &&
         "hover:scale-105 transform transition duration-300 ease-out cursor-pointer"
       } ${background && `bg-[#e5fffe]`} p-3 rounded-3xl`}
