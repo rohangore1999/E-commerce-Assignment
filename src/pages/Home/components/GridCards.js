@@ -1,128 +1,54 @@
-// import React from "react";
-
-// // Constants
-// import { GRID_CARD_CONFIG } from "../constants";
-
-// // Components
-// import GridCard from "./GridCard";
-
-// const GridCards = () => (
-//   <div className="grid-cols-3 p-20 pt-0 space-y-2 lg:space-y-0 lg:grid lg:gap-3 lg:grid-rows-3">
-//     {GRID_CARD_CONFIG.map((card) => (
-//       <GridCard
-//         key={card.id}
-//         row={card.row}
-//         img={card.img}
-//         caption={card.caption}
-//       />
-//     ))}
-//   </div>
-// );
-
-// export default GridCards;
-
 import React from "react";
+
+// Configs
+import { GRID_CARD_CONFIG, GRID_CARD_CONFIG_MOBILE } from "../../../configs";
+
+// Hooks
+import useScreenSize from "../../../hooks/useScreenSize";
 
 // Components
 import GridCard from "./GridCard";
 
 const GridCards = () => {
+  const { width } = useScreenSize();
+
   return (
-    <div class="grid-cols-3 p-20 pt-0 space-y-2 lg:space-y-0 lg:grid lg:gap-3 lg:grid-rows-3">
-      {/* <GridCard row={2} /> */}
+    <div className="grid grid-cols-2 gap-3 p-10 h-[600px] md:h-full md:grid-cols-3 grid-rows-3 md:p-20 pt-0 space-y-2 md:space-y-0 md:grid md:gap-3 md:grid-rows-3">
+      {width > "765"
+        ? GRID_CARD_CONFIG.map(({ row, img, caption }) => (
+            <div
+              className={`relative w-full ${row > 1 ? `row-span-${row}` : ""}`}
+            >
+              <img
+                src={img}
+                alt={caption}
+                className="rounded-3xl w-full h-full"
+              />
 
-      {/* 1x1 && 2x1 : row-span-2 */}
-      <div class="relative w-full row-span-2">
-        <img
-          src="https://images.pexels.com/photos/794062/pexels-photo-794062.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="image1"
-          className="rounded-3xl "
-        />
+              <div className="absolute bg-white w-9/12 bottom-0 left-[12%] text-center p-5 rounded-t-3xl">
+                <p className="text-center text-xl font-medium tracking-widest">
+                  {caption}
+                </p>
+              </div>
+            </div>
+          ))
+        : GRID_CARD_CONFIG_MOBILE.map(({ row, img, caption }) => (
+            <div
+              className={`relative w-full ${row > 1 ? `row-span-${row}` : ""}`}
+            >
+              <img
+                src={img}
+                alt={caption}
+                className="rounded-3xl w-full h-full"
+              />
 
-        <div className="absolute bg-white w-9/12 bottom-0 left-[12%] text-center p-5 rounded-t-3xl">
-          <p className="text-center text-xl font-medium tracking-widest">
-            Color Splash
-          </p>
-        </div>
-      </div>
-
-      {/* 1x2 */}
-      <div class="relative w-full rounded ">
-        <img
-          src="https://images.pexels.com/photos/1456737/pexels-photo-1456737.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="image1"
-          style={{ width: "100%", height: "100%" }}
-          className="rounded-3xl"
-        />
-
-        <div className="absolute bg-white w-9/12 bottom-0 left-[12%] text-center p-5 rounded-t-3xl">
-          <p className="text-center text-xl font-medium tracking-widest">
-            Color Splash
-          </p>
-        </div>
-      </div>
-
-      {/* 1x3 && 2x3 */}
-      <div class="relative w-full row-span-2 rounded">
-        <img
-          src="https://images.pexels.com/photos/6764007/pexels-photo-6764007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="image1"
-          className="rounded-3xl"
-        />
-
-        <div className="absolute bg-white w-9/12 bottom-0 left-[12%] text-center p-5 rounded-t-3xl">
-          <p className="text-center text-xl font-medium tracking-widest">
-            Color Splash
-          </p>
-        </div>
-      </div>
-
-      {/* 2x2 && 3x2 */}
-      <div class="relative w-full row-span-2  rounded">
-        <img
-          src="https://images.pexels.com/photos/7327268/pexels-photo-7327268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="image1"
-          className="rounded-3xl"
-        />
-
-        <div className="absolute bg-white w-9/12 bottom-0 left-[12%] text-center p-5 rounded-t-3xl">
-          <p className="text-center text-xl font-medium tracking-widest">
-            Color Splash
-          </p>
-        </div>
-      </div>
-
-      {/* 3x1 */}
-      <div class="relative w-full row-span-2 rounded">
-        <img
-          src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="image1"
-          style={{ width: "100%", height: "96%" }}
-          className="rounded-3xl"
-        />
-
-        <div className="absolute bg-white w-9/12 bottom-0 left-[12%] text-center p-5 rounded-t-3xl">
-          <p className="text-center text-xl font-medium tracking-widest">
-            Color Splash
-          </p>
-        </div>
-      </div>
-
-      {/* 3x3 */}
-      <div class="relative w-full rounded">
-        <img
-          src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="image1"
-          style={{ width: "100%", height: "100%" }}
-          className="rounded-3xl"
-        />
-
-        <div className="absolute bg-white w-9/12 bottom-0 left-[12%] text-center p-5 rounded-t-3xl">
-          <p className="text-center text-xl font-medium tracking-widest">
-            Color Splash
-          </p>
-        </div>
-      </div>
+              <div className="absolute bg-white w-9/12 bottom-0 left-[12%] text-center p-2 rounded-t-3xl">
+                <p className="text-center text-xs font-semibold">
+                  {caption}
+                </p>
+              </div>
+            </div>
+          ))}
     </div>
   );
 };
