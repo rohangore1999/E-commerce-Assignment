@@ -26,7 +26,7 @@ const MainSection = () => {
   return (
     <>
       {/* Small Cards */}
-      <div className="flex justify-center space-x-4">
+      <div className="flex md:justify-center px-2 space-x-4 overflow-scroll scrollbar-hide no-scrollbar md:ml-0">
         {MENU_CONFIG.map((menu, menuIdx) => (
           <MenuCards key={menuIdx} img={menu.img} caption={menu.text} />
         ))}
@@ -36,7 +36,11 @@ const MainSection = () => {
       <HeroBanner />
 
       {/* Medium Cards */}
-      <div className="flex overflow-scroll scrollbar-hide no-scrollbar space-x-3 p-3 -ml-3">
+      <div className="md:hidden">
+        <SectionTitle title="What's New" align="left" />
+      </div>
+
+      <div className="flex overflow-scroll scrollbar-hide no-scrollbar space-x-3 p-3 px-5 md:px-0 md:-ml-1">
         {FEATURE_BRAND_CONFIG.map((feature, id) => (
           <Cards
             key={id}

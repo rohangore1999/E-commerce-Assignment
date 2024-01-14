@@ -1,4 +1,5 @@
 // Components
+import React from "react";
 import Divider from "../../components/Divider";
 import { Footer } from "./components/Footer";
 import Headers from "./components/Headers";
@@ -12,7 +13,9 @@ const Home = () => {
 
       <Headers />
 
-      <Divider />
+      <div className="hidden md:block">
+        <Divider />
+      </div>
 
       <div className="mx-auto max-w-screen-2xl mb-32">
         <MainSection />

@@ -14,6 +14,10 @@
   .section-container {
     @apply flex flex-col justify-center pt-20 space-y-10;
   }
+
+  .icon-styles {
+    @apply h-5 w-5 cursor-pointer hover:scale-125 transition duration-150
+  }
 }
 
 @layer utilities {

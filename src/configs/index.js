@@ -56,6 +56,18 @@ export const BANNER_CONFIG = [
   { img: banner1 },
 ];
 
+export const BANNER_CONFIG_MOBILE = [
+  {
+    img: "https://images.pexels.com/photos/4004173/pexels-photo-4004173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    img: "https://images.pexels.com/photos/4066288/pexels-photo-4066288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    img: "https://images.pexels.com/photos/2002717/pexels-photo-2002717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+];
+
 export const FEATURE_BRAND_CONFIG = [
   {
     title: "New Arrival",
