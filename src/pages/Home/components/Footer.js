@@ -5,7 +5,7 @@ import Divider from "../../../components/Divider";
 
 export const Footer = () => {
   return (
-    <footer className="bg-black">
+    <footer className="bg-black md:pb-0 pb-16">
       <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="lg:flex lg:items-start lg:gap-8">
           <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-4 lg:gap-[10rem]">
@@ -144,7 +144,9 @@ export const Footer = () => {
 
           <div className="flex flex-col flex-1 gap-4">
             <div>
-              <p className="text-white">Get Updates on your inbox</p>
+              <p className="text-white mt-10 md:mt-0">
+                Get Updates on your inbox
+              </p>
             </div>
 
             <div className="flex gap-2">

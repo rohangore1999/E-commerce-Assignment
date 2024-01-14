@@ -17,7 +17,7 @@ const HeroBanner = () => {
   const { width } = useScreenSize();
 
   return (
-    <section className="flex justify-center relative py-16 cursor-pointer">
+    <section className="flex justify-center relative mt-6 pb-4 md:pb-16 cursor-pointer">
       <Carousel
         autoPlay
         infiniteLoop
@@ -25,7 +25,7 @@ const HeroBanner = () => {
         showIndicators={false}
         showThumbs={false}
         interval={5000}
-        className="w-[90%]"
+        className="w-[90%] md:w-full"
       >
         {width > "768"
           ? BANNER_CONFIG.map((banner, bannerIdx) => (

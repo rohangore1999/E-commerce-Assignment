@@ -26,13 +26,13 @@ const SectionFOMO = () => {
           showIndicators={false}
           showThumbs={false}
           interval={5000}
-          className="px-5 mt-5"
+          className="px-5"
         >
           <Banner img={BANNER_TOO_HOT_TO_MISS_1} />
           <Banner img={BANNER_TOO_HOT_TO_MISS_2} />
         </Carousel>
       ) : (
-        <div className="flex gap-5 mt-5 mb-16">
+        <div className="flex gap-5">
           <Banner img={BANNER_TOO_HOT_TO_MISS_1} />
           <Banner img={BANNER_TOO_HOT_TO_MISS_2} />
         </div>

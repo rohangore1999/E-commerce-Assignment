@@ -17,24 +17,26 @@ const MainSection = () => {
       {/* Small Cards */}
       <SectionMenuCards />
 
-      {/* hero section */}
+      {/* Hero section */}
       <HeroBanner />
 
-      {/* Medium Cards */}
-      <div className="md:hidden">
-        <SectionTitle title="What's New" align="left" />
-      </div>
+      {/* Features Cards - What's New - Mobile */}
+      <>
+        <div className="md:hidden mt-10 md:mt-0">
+          <SectionTitle title="What's New" align="left" />
+        </div>
 
-      <FeatureCards />
+        <FeatureCards />
+      </>
 
-      {/* Banner */}
+      {/* Banner - Design of the week */}
       <div className="section-container">
         <SectionTitle title="Design of the Week" />
 
         <Banner img={design_of_week} button />
       </div>
 
-      {/* Grid Banner */}
+      {/* Grid Banner - Trending Categories */}
       <div className="section-container mb-5">
         <SectionTitle
           title="Trending Categories 🔥"
@@ -45,18 +47,32 @@ const MainSection = () => {
       </div>
 
       {/* Too Hot to Section */}
-      <div className="mb-14">
+      <div className="section-container">
         <SectionTitle title="Too hot to be missed" />
 
         <SectionFOMO />
       </div>
 
       {/* Categories to Bag */}
-      <>
+      <div className="section-container mt-2 -space-y-px">
         <SectionTitle title="Categories to bag" />
 
         <SectionBagCategories />
-      </>
+      </div>
+
+      {/* Best of BEWAKOOF - MOBILE */}
+      <div className="md:hidden mt-10">
+        <SectionTitle title="Best of Bewakoof" />
+
+        <HeroBanner />
+      </div>
+
+      {/* Top Accessories */}
+      <div className="md:hidden section-container -space-y-px">
+        <SectionTitle title="Top Accessories" />
+
+        <SectionBagCategories />
+      </div>
     </>
   );
 };
