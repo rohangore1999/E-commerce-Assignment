@@ -1,5 +1,7 @@
 Hosted: https://bewakoof-birla.netlify.app/
 
+Build using Tailwind, Vite 
+
 --------------------------------------------------------------------------------------------------------------
 
 # Getting Started with Create React App
